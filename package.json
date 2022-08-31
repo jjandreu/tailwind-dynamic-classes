@@ -1,11 +1,11 @@
 {
   "name": "@jjandreu/tailwind-dynamic-classes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Tailwind CSS plugin to add dynamic classes at build.",
   "main": "plugin.js",
   "author": "Juan José Andreu",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.1.8"
   }
 }

@@ -1,7 +1,6 @@
 const plugin = require("tailwindcss/plugin");
-const {trim} = require("lodash");
 
-const dynamicClassesPlugin = plugin(
+module.exports = dynamicClassesPlugin = plugin(
     function ({ addComponents, theme, e }) {
         const scopes = theme("dynamicClasses");
         const components = getComponents(scopes);
@@ -38,7 +37,7 @@ const generateDynamicCssClasses = (scopes) => {
         const classes = generateClasses(scope);
         if(classes.length) {
             classes.forEach( (cls) => {
-                if(trim(cls) !== '') {
+                if(cls !== '') {
                     ret.push(cls);
                 }
             });
